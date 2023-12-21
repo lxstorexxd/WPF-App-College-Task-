@@ -46,7 +46,7 @@ namespace TestProject.Views
         {
             if (Application.Current.MainWindow is MainWindow mainWindow)
             {
-                mainWindow.MainFrame.Navigate(new UsersView());
+                mainWindow.MainFrame.Navigate(new EmployeeShiftListView());
             }
         }
     }
