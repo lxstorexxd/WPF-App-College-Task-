@@ -24,8 +24,6 @@
         <!-- Левая часть с аватаркой -->
         <StackPanel Grid.Column="0" Margin="20">
             <Image Source="{Binding AvatarPath}" Width="100" Height="100" Margin="0,0,0,10"/>
-            <Label Content="Изменить фотографию:"/>
-            <Button Content="Обзор..." Margin="0,0,0,10"/>
         </StackPanel>
 
         <!-- Правая часть с именем, фамилией и датой -->
@@ -38,13 +36,13 @@
 
         <!-- Нижняя часть с кнопками -->
         <StackPanel Grid.Column="0" Grid.Row="2" VerticalAlignment="center">
-            <Button Content="Товары" Width="100" Height="30" Click="Button_Click_1"/>
+            <Button Content="Товары" Background="#CD5C5C" Foreground="#ffffff" Width="100" Height="30" Click="Button_Click_1" FontFamily="Comic Sans MS"/>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="center">
-            <Button Content="Сотрудники" Width="100" Height="30" Click="Button_Click_2"/>
+            <Button Content="Сотрудники" Background="#CD5C5C" Foreground="#ffffff" Width="100" Height="30" Click="Button_Click_2" FontFamily="Comic Sans MS"/>
         </StackPanel>
         <StackPanel Grid.Column="2" Grid.Row="2" VerticalAlignment="center">
-            <Button Content="Смена" Width="100" Height="30" Click="Button_Click_3"/>
+            <Button Content="Смена" Background="#CD5C5C" Foreground="#ffffff" Width="100" Height="30" Click="Button_Click_3" FontFamily="Comic Sans MS"/>
         </StackPanel>
     </Grid>
 </Page>

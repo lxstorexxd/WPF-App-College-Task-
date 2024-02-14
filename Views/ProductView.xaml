@@ -10,7 +10,7 @@
       Background="#F0F0F0">
 
     <Grid>
-        <DataGrid ItemsSource="{Binding Products}" AutoGenerateColumns="False">
+        <DataGrid ItemsSource="{Binding Products}" AutoGenerateColumns="False" FontFamily="Comic Sans MS">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Название" Binding="{Binding Name}" />
                 <DataGridTextColumn Header="Срок годности" Binding="{Binding Expiration}" />
@@ -19,6 +19,6 @@
                 <DataGridTextColumn Header="Вес, г." Binding="{Binding Weight}" />
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Назад" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Height="24" Width="79" Command="{Binding BackCommand}" Click="Button_Click_1" />
+        <Button Content="Назад" Background="#CD5C5C" Foreground="#ffffff" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Height="24" Width="79" Command="{Binding BackCommand}" Click="Button_Click_1" FontFamily="Comic Sans MS" />
     </Grid>
 </Page>

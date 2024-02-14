@@ -31,5 +31,10 @@ namespace TestProject.Views
         {
             NavigationService.GoBack();
         }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

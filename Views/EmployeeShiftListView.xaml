@@ -10,14 +10,14 @@
       Background="#F0F0F0">
 
     <Grid>
-        <DataGrid ItemsSource="{Binding EmployeeShifts}" AutoGenerateColumns="False">
+        <DataGrid ItemsSource="{Binding EmployeeShifts}" AutoGenerateColumns="False" FontFamily="Comic Sans MS" SelectionChanged="DataGrid_SelectionChanged">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Employee" Binding="{Binding EmployeeName}" />
-                <DataGridTextColumn Header="Shift Date" Binding="{Binding ShiftDate}" />
-                <DataGridTextColumn Header="Shift Type" Binding="{Binding ShiftType}" />
-                <DataGridTextColumn Header="Comments" Binding="{Binding Comments}" />
+                <DataGridTextColumn Header="Employee" Binding="{Binding ShiftId}" />
+                <DataGridTextColumn Header="Shift Date" Binding="{Binding EmployeeName}" />
+                <DataGridTextColumn Header="Shift Type" Binding="{Binding ShiftDate}" />
+                <DataGridTextColumn Header="Comments" Binding="{Binding Revenue}" />
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Назад" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Height="24" Width="79" Click="Button_Click" />
+        <Button Content="Назад" Background="#CD5C5C" Foreground="#ffffff" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Height="24" Width="79" Click="Button_Click" FontFamily="Comic Sans MS" />
     </Grid>
 </Page>

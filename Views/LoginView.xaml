@@ -7,25 +7,25 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Login"
-      Background="#F0F0F0">
+      Background="#FFFFFF">
 
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="264">
             <StackPanel>
                 <Label Content="Username" Foreground="Black"/>
-                <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Padding="5" Margin="0,0,0,10">
+                <Border BorderBrush="#FFA07A" BorderThickness="1" CornerRadius="5" Padding="5" Margin="0,0,0,10">
                     <TextBox Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" BorderThickness="0" Background="Transparent"/>
                 </Border>
             </StackPanel>
 
             <StackPanel>
                 <Label Content="Password" Foreground="Black"/>
-                <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Padding="5" Margin="0,0,0,10">
+                <Border BorderBrush="#FFA07A" BorderThickness="1" CornerRadius="5" Padding="5" Margin="0,0,0,10">
                     <PasswordBox x:Name="RoundedPasswordBox" BorderThickness="0" Background="Transparent" PasswordChanged="PasswordChanged_Password" />
                 </Border>
             </StackPanel>
-        
-            <Button Content="Войти" Command="{Binding LoginCommand}" Width="100" Height="30" Click="Button_Click"/>
+
+            <Button Content="Войти" Background="#CD5C5C" Foreground="#ffffff"  Command="{Binding LoginCommand}" Width="100" Height="30" Click="Button_Click"/>
         </StackPanel>
     </Grid>
 
